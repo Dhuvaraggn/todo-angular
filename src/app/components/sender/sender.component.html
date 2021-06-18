@@ -1,0 +1,7 @@
+<div style="border-color: #7fff00;">
+    {{ date | date : 'full' | uppercase  }}
+    <form #f="ngForm" (ngSubmit)="sendmsg(f)">
+    <input type="text" ngModel name="msg" >
+    <button type="submit" name="sub" value="send">send</button>
+</form>
+</div>
