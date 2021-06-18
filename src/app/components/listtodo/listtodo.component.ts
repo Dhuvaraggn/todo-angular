@@ -11,7 +11,7 @@ import { todolist } from 'src/app/ToDos';
 })
 export class ListtodoComponent implements OnInit {
 
-  @Input() todolist:todo[]=[{tododesc:''}]
+  @Input() todolist:todo[]=[]
   @Output() changelist:any=new EventEmitter()
   todos:todo[]=[]
   constructor() {

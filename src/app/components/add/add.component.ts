@@ -20,7 +20,7 @@ export class AddComponent implements OnInit {
   
   {
     console.log(this.todolist)
-    todoadd={id:this.todolist.length+1,tododesc:todoadd.tododesc}
+    todoadd={id:this.todolist.length+1,tododesc:todoadd.tododesc,notes:todoadd.notes}
     this.todolist.push(todoadd)
     localStorage.setItem("todolist",JSON.stringify(this.todolist))
     console.log(this.todolist)
