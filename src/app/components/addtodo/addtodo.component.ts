@@ -50,8 +50,9 @@ export class AddtodoComponent implements OnInit {
     this.formnotes.push(s)
     console.log(this.formgrp)
   }
-  removeformgrp()
-  {  this.formnotes=this.formgrp.get('formnotes') as FormArray
-  this.formnotes=''
+  removeformgrp(f:any)
+  {  
+    console.log(f)
+    console.log(this.formnotes.controls.splice(f,1)   )
   }
 }

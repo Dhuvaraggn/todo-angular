@@ -9,7 +9,7 @@
         <div formArrayName="formnotes" *ngFor="let notes of formgrp.get('formnotes')['controls'];let i=index;">
            <div [formGroupName]="i">
             Notes <input type="text" formControlName="formdesc">
-            <button (click)="removeformgrp()" style="background-color: crimson;">X</button>
+            <button (click)="removeformgrp(i)" style="background-color: crimson;">X</button>
         </div></div>
     <button (click)="addformgrp()" >add Notes</button><br/><br/>
        <button (click)="addtodo()" style="font-size:50px;background-color:chartreuse; border: 5px solid green;" type="submit"  name="subbut">submit</button>
